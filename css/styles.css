@@ -1,12 +1,129 @@
-/* Колір фону #F5F5F5
-Колір тексту та мейл+телефон в header #757575
+/* основний колір фону #F5F5F5
+вторинний колір фону #F5F4FA
+основний колір тексту та мейл+телефон в header #757575
 Колір заголовків #212121
 Колір взаємодії #2196F3
-Background під h1 та footer #2F303A */
+Background під h1 та footer #2F303A 
+Колір мейл+телефон в футер color: rgba(255, 255, 255, 0.6);
 
+Білий колір #FFFFFF
+Чорний колір #000000
+*/
 
-
-
-body {
-    background-color: #F5F5F5;
+:root {
+  --primary-bckg-color: #f5f5f5;
+  --second-bckd-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --primary-action-color: #2196f3;
+  --bckg-footer-color: #2f303a;
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
+ /* index.html */
+body {
+  background-color: var(--primary-bckg-color);
+  color: var(--primary-text-color);
+}
+/* header */
+.logo-icon {
+  color: var(--primary-action-color);
+}
+.header-logo-link {
+  color: #000000;
+}
+
+.logo-icon, .header-logo-link {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.site-nav-link {
+  color: var(--primary-title-color);
+}
+
+.contact-list-item {
+  color: var(--primary-text-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--primary-action-color);
+  cursor: pointer;
+}
+
+.contact-list-item:hover,
+.contact-list-item:focus {
+  color: var(--primary-action-color);
+}
+
+.site-nav-item {
+  color: var(--primary-action-color);
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--bckg-footer-color);
+}
+.hero-title {
+    color: var(--white-color);
+}
+.hero-button {
+    background-color: var(--primary-action-color);
+    color: var(--white-color);
+}
+.hero-button:hover, .hero-button:focus {
+    color: var(--primary-title-color);
+}
+
+/* features */
+
+.features-title {
+    color: var(--primary-title-color);
+}
+
+
+
+/* about */
+.about-title {
+    color: var(--primary-title-color);
+}
+
+
+
+.team-title, .team-title-item {
+    color: var(--primary-title-color);
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--bckg-footer-color);
+}
+
+.footer-logo-link {
+    color: var(--white-color);
+}
+
+.footer-adress {
+    color: var(--white-color)
+}
+
+.footer-adress:hover, .footer-adress:focus {
+    color: var(--primary-action-color);
+}
+
+.footer-contact-item {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-item:hover, .footer-contact-item:focus {
+    color: var(--primary-action-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* portfolio.html */

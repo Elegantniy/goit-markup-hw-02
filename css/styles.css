@@ -31,6 +31,7 @@ body {
 }
 .header-logo-link {
   color: #000000;
+  text-decoration: none;
 }
 
 .logo-icon, .header-logo-link {
@@ -39,10 +40,12 @@ body {
 
 .site-nav-link {
   color: var(--primary-title-color);
+  text-decoration: none;
 }
 
 .contact-list-item {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .site-nav-link:hover,
@@ -104,10 +107,12 @@ body {
 
 .footer-logo-link {
     color: var(--white-color);
+    text-decoration: none;
 }
 
 .footer-adress {
-    color: var(--white-color)
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 .footer-adress:hover, .footer-adress:focus {
@@ -116,6 +121,7 @@ body {
 
 .footer-contact-item {
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 
 .footer-contact-item:hover, .footer-contact-item:focus {
@@ -127,3 +133,18 @@ body {
 }
 
 /* portfolio.html */
+
+/* portfolio */
+.portfolio-button {
+    color: var(--primary-title-color);
+    cursor: pointer;
+}
+
+.portfolio-button:hover, .portfolio-button:focus {
+    background-color: var(--primary-action-color);
+    color: var(--white-color);
+}
+
+.content-title {
+    color: var(--primary-title-color);
+}

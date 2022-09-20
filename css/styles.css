@@ -124,7 +124,7 @@ body {
 }
 
 /* about */
-.section.title {
+.section-title {
   color: var(--primary-title-color);
   font-size: 36px;
   line-height: 1.16;
@@ -178,22 +178,15 @@ body {
   color: var(--primary-action-color);
 } */
 
-.footer-contact-item.mail {
+.footer-contact-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   line-height: 1.71;
   font-style: normal;
 }
 
-.footer-contact-item.tel {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.71;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.footer-contact-item:hover,
-.footer-contact-item:focus {
+.footer-contact-link:hover,
+.footer-contact-link:focus {
   color: var(--primary-action-color);
 }
 
